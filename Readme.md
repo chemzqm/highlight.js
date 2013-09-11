@@ -1,6 +1,6 @@
 # highlight.js
 
-  [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for component.
+  [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for component, works the same as highlight.js as nodejs module.
 
   [Demo](http://chemzqm.github.io/highlight.js/index.html)
 
