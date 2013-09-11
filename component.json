@@ -6,7 +6,6 @@
   "keywords": [],
   "dependencies": {},
   "development": {
-    "component/event": "*"
   },
   "license": "MIT",
   "main": "index.js",
