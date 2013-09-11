@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example of highlight.js</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="build/build.js"></script>
+    <link rel="stylesheet" href="highlight.css" />
+    <style>
+      body {
+        padding:100px;
+      }
+      #result {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="code" name="" id="" cols="30" rows="10"></textarea>
+    <div>
+      <pre id="result">
+        <code>
+        </code>
+      </pre>
+    </div>
+
+    <script>
+      var events = require('event');
+      var hljs = require('highlight.js');
+      var el = document.getElementById('code');
+events.bind(el, 'keyup', function(e) {
+  var code = el.value;
+  var res = hljs.highlight('javascript', code);
+  //value language
+  var result = document.querySelector('#result > code');
+  result.innerHTML = res.value;
+})
+    </script>
+  </body>
+</html>
