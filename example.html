@@ -15,7 +15,18 @@
     </style>
   </head>
   <body>
-    <textarea id="code" name="" id="" cols="30" rows="10"></textarea>
+    <textarea id="code" name="" id="" cols="50" rows="13">
+      var events = require('event');
+      var hljs = require('highlight.js');
+      var el = document.getElementById('code');
+      events.bind(el, 'keyup', function(e) {
+        var code = el.value;
+        var res = hljs.highlight('javascript', code);
+        //value language
+        var result = document.querySelector('#result > code');
+        result.innerHTML = res.value;
+      })
+    </textarea>
     <div>
       <pre id="result">
         <code>
@@ -27,13 +38,11 @@
       var events = require('event');
       var hljs = require('highlight.js');
       var el = document.getElementById('code');
-events.bind(el, 'keyup', function(e) {
-  var code = el.value;
-  var res = hljs.highlight('javascript', code);
-  //value language
-  var result = document.querySelector('#result > code');
-  result.innerHTML = res.value;
-})
+      var code = el.value;
+      var res = hljs.highlight('javascript', code);
+      //value language
+      var result = document.querySelector('#result > code');
+      result.innerHTML = res.value;
     </script>
   </body>
 </html>
