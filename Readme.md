@@ -1,6 +1,6 @@
 # highlight.js
 
-  Syntax highlight for component.
+  [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for component.
 
 ## Installation
 
