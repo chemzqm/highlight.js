@@ -2,6 +2,8 @@
 
   [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for component.
 
+  [Demo](http://chemzqm.github.io/highlight.js/index.html)
+
 ## Installation
 
   Install with [component(1)](http://component.io):
