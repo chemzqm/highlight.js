@@ -1,7 +1,6 @@
-
 # highlight.js
 
-  syntax highlight for code
+  Syntax highlight for component.
 
 ## Installation
 
@@ -11,7 +10,23 @@
 
 ## API
 
+### hljs.highlight(lang, code)
 
+Highlight the `code` with `lang`.
+
+### hljs.highlightAuto(text)
+
+Highlight the `text` with language auto detect.
+
+## Example
+
+``` js
+var hljs = require('highlight.js');
+var code = "var index = 123;\n var foo ='bar'\n";
+var res = hljs.highlight('javascript', code);
+//get the result code
+console.log(res.value); 
+```
 
 ## License
 
